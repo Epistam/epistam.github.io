@@ -1,12 +1,11 @@
-- title: "Home"
-  href: "/"
+docs_list_title: ACME Documentation
+docs:
 
-- title: "News"
-  href: "/test.html"
+- title: Introduction
+  url: introduction.html
 
-- title: "Snippets"
-  subcategories:
-    - subtitle: "Example1"
-      subhref: "#"
-    - subtitle: "Example2"
-      subhref: "#"
+- title: Configuration
+  url: configuration.html
+
+- title: Deployment
+  url: deployment.html
