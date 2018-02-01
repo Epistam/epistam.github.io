@@ -15,7 +15,7 @@ So now you've got your site up and running, with a reserved *.github.io* domain 
 You're free to toy around a little bit, but you'll soon find yourself a bit limited... by the theme itself. 
 Basically, the header was nice and all, but I wanted a menu because a single page blog is kind of awkward to browse. 
 That's the part I kind of struggled on for a bit of time : finding a way to override that god damned theme. 
-The keywords are pretty important here, as I ended up spending a bit of time on Google basically biting my tail at every research. 
+The keywords are pretty important here, as I ended up spending a bit of time on Google biting my tail at every research. 
 Turns out this function is natively implemented in Github, and you just have to find the right [page](https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/).
 
 In my case, I mainly wanted to tinker with the header to make a single level menu, as I didn't want to bother editing the CSS to make a second level. So each general topic has its own index page which in turn lists all the articles I manually sort every time I write and add them. I also wanted to remove a few elements I felt didn't fit very well such as the theme author credit. And also change the title, because the name of the repository is nothing too attractive. 
@@ -28,7 +28,7 @@ Remember about my remark on PHP ? Well, there we go.
 
 ## Liquid
 You guessed it, GP doesn't have PHP, but it has some kind of similar language, which is called Liquid. 
-It basically allows you to format the text or make dynamic menus just like PHP would. I've not delved into it too much unfortunately, but I'm pretty sure it's somewhat inherently more limited compared to PHP, which is in my opinion is justified : Liquid's purpose is not to be a fully blown web developpement language, but more a local programming tool to make that blog a little smarter. 
+It allows you to format the text or make dynamic menus just like PHP would. I've not delved into it too much unfortunately, but I'm pretty sure it's somewhat inherently more limited compared to PHP, which is in my opinion is justified : Liquid's purpose is not to be a fully blown web developpement language, but more a local programming tool to make that blog a little smarter. 
 One of its favored uses is to make dynamic menus from a YML file as shown [here](https://jekyllrb.com/tutorials/navigation/#scenario-1-basic-list) : the hierarchy is stored in that file, a script stored in the header parses this file everytime a page is loaded and generates the menu.
 Speaking of headers, Liquid also allows you to include various files, so headers and footers are fine. 
 But since they are generally the same for all the pages, a way to circumvent Liquid is to just edit the *default.html* file according to your wishes. 
