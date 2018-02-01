@@ -7,4 +7,6 @@ The idea is to be able to, one day, get back to all the projects I've worked on 
 In a more utilitarian manner, I'm also looking to revisit and maintain and / or upgrade projects I've done in the past without struggling to remember what I did and how I did it. 
 
 As for myself...
-Well, I got into the IT world as a Minecraft player blablabablablal
+IT world blabla
+
+TODO : how i got there + why the name
