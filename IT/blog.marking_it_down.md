@@ -27,12 +27,14 @@ Turns out (if you read the link) it's implemented natively : you just have to fi
 Remember about my remark on PHP ? Well, there we go.
 
 ## Liquid
-You guessed it, GP doesn't have PHP, but it has some kind of similar language, which is called liquid. 
-It basically allows you to format the text, make dynamic menus just like PHP would. I've not delved into too much unfortunately, but I'm pretty sure it's somewhat inherently more limited than PHP is, which is in my opinion is justified : Liquid's purpose is not to be a fully blown web developpement language, but more a local programming tool to make that blog a little smarter. 
-One of its most liked uses is to make dynamic menus from a YML file : the hierarchy is stored in that file, a script stored in the header parses this file everytime and generates the menu.
+You guessed it, GP doesn't have PHP, but it has some kind of similar language, which is called Liquid. 
+It basically allows you to format the text, make dynamic menus just like PHP would. I've not delved into too much unfortunately, but I'm pretty sure it's somewhat inherently more limited compared to PHP, which is in my opinion is justified : Liquid's purpose is not to be a fully blown web developpement language, but more a local programming tool to make that blog a little smarter. 
+One of its most liked uses is to make dynamic menus from a YML file as shown [here](https://jekyllrb.com/tutorials/navigation/#scenario-1-basic-list) : the hierarchy is stored in that file, a script stored in the header parses this file everytime and generates the menu.
 Speaking of headers, Liquid also allows you to include various files, so headers and footers are fine. 
 But since they are generally the same for all the pages, a way to circumvent Liquid is to just edit the *default.html* file according to your wishes. 
 
 ## Conclusion
 In the end, I'm pretty happy with GP since I didn't have to invest much (configuration and / or developpement) time into it to get it to work.
 Markdown also looks quite efficient on a more regular basis : it allows for flexible and fast formatting without suffering the torment of HTML or LaTeX (the latter is pretty unrelated to web publishing, I'm not aware of any LaTeX / HTML wrapper so far).
+
+This [page](https://guides.github.com/features/mastering-markdown/) and this [one](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might also be useful reads if you're looking to get into Markdown.
