@@ -21,9 +21,9 @@ Turns out this function is natively implemented in Github, and you just have to 
 In my case, I mainly wanted to tinker with the header to make a single level menu, as I didn't want to bother editing the CSS to make a second level. So each general topic has its own index page which in turn lists all the articles I manually sort every time I write and add them. I also wanted to remove a few elements I felt didn't fit very well such as the theme author credit. And also change the title, because the name of the repository is nothing too attractive. 
 
 As I said, this functionnality is implemented natively : you just have to find the Github *page-themes* repository, locate your theme and get the *_layouts/default.html* file. This *page-themes/THEME* folder is basically the default structure of the site that is hidden to you when you only add files through your own repository. But if you bring one of these files with the same path and name as in this default hierarchy, you'll just override it. As simple as that. If you read the file though, you will notice something doesn't quite looks like HTML or CSS, generally between braces on each side :
-
-	<html lang="{{ "{{site.lang | default: \"en-US\" "}}}}">
-	
+{% raw  %}
+	<html lang="{{ site.lang | default: "en-US" }}">
+{% endraw %}
 Remember about my remark on PHP ? Well, there we go.
 
 ## Liquid
