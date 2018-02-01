@@ -1,7 +1,7 @@
 # Marking it down
 ###### 01/02/2018
 
-## Getting the grip on it
+## Getting a grip on it
 My adventure with Github Pages hasn't been a quiet river, at least in the beginning. Okay, starting to look into it while doing other stuff at the same time probably didn't help.
 I've been working on it in 2 sessions, the first one struggling to get stuff done because I wasn't fully focused, and the next one at home, actually looking to achieve what I wanted to. 
 
@@ -16,13 +16,13 @@ You're free to toy around a little bit, but you'll soon find yourself a bit limi
 Basically, the header was nice and all, but I wanted a menu because a single page blog is kind of awkward to browse. 
 That's the part I kind of struggled on for a bit of time : finding a way to override that god damned theme. 
 The keywords are pretty important here, as I ended up spending a bit of time on Google biting my tail at every research. 
-Turns out this function is natively implemented in Github, and you just have to find the right [page](https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/).
+Turns out this function is natively supported by GP, and you just have to find the right [page](https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/).
 
 In my case, I mainly wanted to tinker with the header to make a single level menu, as I didn't want to bother editing the CSS to make a second level. So each general topic has its own index page which in turn lists all the articles I manually sort every time I write and add them. I also wanted to remove a few elements I felt didn't fit very well such as the theme author credit. And also change the title, because the name of the repository is nothing too attractive. 
 
 As I said, this functionnality is implemented natively : you just have to find the Github *page-themes* repository, locate your theme and get the *_layouts/default.html* file. This *page-themes/THEME* folder is basically the default structure of the site that is hidden to you when you only add files through your own repository. But if you bring one of these files with the same path and name as in this default hierarchy, you'll just override it. As simple as that. If you read the file though, you will notice something doesn't quite looks like HTML or CSS, generally between braces on each side :
 {% raw  %}
-	<html lang="{{ site.lang | default: "en-US" }}">
+	{% if site.google_analytics %}
 {% endraw %}
 Remember about my remark on PHP ? Well, there we go.
 
