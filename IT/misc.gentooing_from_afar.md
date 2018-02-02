@@ -24,7 +24,7 @@ Gentoo is indeed really stable and cautious about its developement and shipping 
 It is not rare for example to witness 1000 days uptime production servers.
 Compile times are not a problem either, as you generally don't care if your server compiles during a whole night in a well AC'd and monitored datacenter. 
 
-![Every package has to be approved for each architecture](https://epistam.github.io/IT/img/misc.gentooing_from_afar.PNG)
+![Every package has to be approved for each architecture](https://epistam.github.io/IT/img/misc.gentooing_from_afar-1.PNG)
 
 My area of concern today is, as you probably guessed it, one of these updates. As if it were to confirm what I just wrote about package management, GCC 6.4.0 has been recently marked stable on regular architectures, which in turn triggered a few changes regarding [user profiles](https://wiki.gentoo.org/wiki/Profile_(Portage)).
 The change was however well documented and the switch is painless on a procedural standpoint. As for the speed, however, things are different. This update requires you to recompile all your packages with GCC 6.4.0, which, depending on your configuration, might take some time. 
