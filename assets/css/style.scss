@@ -5,12 +5,38 @@
 
 @media print, screen and (max-width: 720px) {
 
+  #title {
+    .credits {
+      display: block;
+      width: 100%;
+      line-height: 30px;
+      text-align: right;
 
+      .left {
+        float: none;
+        display: block;
+      }
+
+      .right {
+        float: none;
+        display: block;
+      }
+    }
+  }
 }
 
 @media print, screen and (max-width: 480px) {
 
+  #header {
+    margin-top: -20px;
+  }
 
+  section {
+    margin-top: 40px;
+  }
+  nav {
+    display: none;
+  }
 }
 
-body{color:purple}
+body{color:grey}
