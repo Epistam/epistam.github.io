@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-@media print, screen and (max-width: 480px) {
+@media print, screen and (max-width: 720px) {
 
   #title {
     .credits {
@@ -38,3 +38,5 @@
     display: none;
   }
 }
+
+body{color:grey}
