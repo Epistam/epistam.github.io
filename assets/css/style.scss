@@ -4,9 +4,9 @@
 @import "{{ site.theme }}";
 
 nav {
- width:300px;
+ max-width:300px;
 }
 
 body{
-  color:blue;
+  color:yellow;
 }
