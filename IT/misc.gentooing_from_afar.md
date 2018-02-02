@@ -1,6 +1,7 @@
 # Gentooing from afar
 ###### 02/02/2018
 
+
 ## Who likes mainstream penguins anyway ?
 
 As a Gentoo user, I am quite used to its peculiar -yet extraordinary- way to handle packages. 
