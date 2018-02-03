@@ -5,21 +5,11 @@
 
 // ----------------------------------------------------------------------------------- //
 // Debug
-body {color:red;}
+//body {color:red;}
 // ----------------------------------------------------------------------------------- //
 
-// PC mode header modifications & overriding most of "mobile mode" in the default css
+// Global modifications
 #header {
-	/*
-	z-index: 100;
-	left:0;
-	top: 0px;
-	height: 60px;
-	width: 100%;
-	position: fixed;*/
-	
-	margin-top:0px;
-	
 	text-align:center;
 	
 	nav {
@@ -29,17 +19,13 @@ body {color:red;}
 		li.fork {
 			display:inline; // Override
 			margin-left: 1px; // Adding gaps between buttons
-			
-			a {
-				display:inline;
-			}
 		}
 	}
 }
-
-// Mobile mode
+/*
+// Mobile mode conditionnal instructions
 @media print, screen and (max-width: 480px) {
-/*	#header {
+	#header {
 		// Default css instructions to override its specific "phone mode" instructions
 
 		
@@ -64,5 +50,5 @@ body {color:red;}
 		padding: 30px 0px 50px 0px;
 		margin: 20px 0;
 		margin-top: 70px;
-	}*/
-}
+	}
+}*/
