@@ -21,15 +21,19 @@ body {
 	height: 60px;
 	width: 100%;
 	position: fixed;
-	  nav {
-		  text-align:center;
-		  li {
-			  display:inline;
-			 a{
-				 display:inline-block;
-				 .menukey {display:none}
-				 width:20px;
-				 height:20px;
+	  #menubar {
+		 
+	 	 nav {
+			 width:100%;
+			  text-align:center;
+			  li {
+				  display:inline;
+				 a{
+					 display:inline-block;
+					 .menukey {display:none}
+					 width:20px;
+					 height:20px;
+				  }
 			  }
 		  }
 	  }
