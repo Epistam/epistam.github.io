@@ -3,10 +3,19 @@
 
 @import "{{ site.theme }}";
 
+// ----------------------------------------------------------------------------------- //
+// Debug
 #mobile{display:none}
+body {color:black;}
+// ----------------------------------------------------------------------------------- //
 
-body {
-	//color:black;
+// PC mode header modifications
+#header {
+	nav {
+		li.fork {
+			margin-left: 1px;
+		}
+	}
 }
 
 // Mobile mode
@@ -26,7 +35,7 @@ body {
 		
 		// Modifications
 		text-align:center;
-
+		
 	 	nav {
 			// Default override
 			display: inline;
