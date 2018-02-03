@@ -25,29 +25,17 @@ body {color:red;}
 // Mobile mode conditionnal instructions
 @media print, screen and (max-width: 480px) {
 	#header {
-		// Default css instructions to override its specific "phone mode" instructions
-
-		
 	 	nav { // Override déjà fait
+			margin-top: 13px;
 			li.fork {
-				// Override default
-				margin-top:0px;
-
+				//margin: 0 0 0 0;
 				a{
 					span.menukey{display:none}
+					padding: 0 0 0 0;
 					width:20px;
 					height:20px;
 				}
 			}
 		}
 	}
-	
-	// Title box override
-	/*
-	section {
-		max-width:650px;
-		padding: 30px 0px 50px 0px;
-		margin: 20px 0;
-		margin-top: 70px;
-	}*/
 }
