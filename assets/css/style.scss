@@ -5,60 +5,64 @@
 
 // ----------------------------------------------------------------------------------- //
 // Debug
-//body {color:black;}
+body {color:red;}
 // ----------------------------------------------------------------------------------- //
 
-// PC mode header modifications
+// PC mode header modifications & overriding most of "mobile mode" in the default css
 #header {
+	/*
+	z-index: 100;
+	left:0;
+	top: 0px;
+	height: 60px;
+	width: 100%;
+	position: fixed;*/
+	
+	margin-top:0px;
+	
 	text-align:center;
+	
 	nav {
 		display: inline-block;
 		background: none;
 		
 		li.fork {
+			display:inline; // Override
 			margin-left: 1px; // Adding gaps between buttons
+			
+			a {
+				display:inline;
+			}
 		}
 	}
 }
 
 // Mobile mode
 @media print, screen and (max-width: 480px) {
-	#header {
+/*	#header {
 		// Default css instructions to override its specific "phone mode" instructions
-		z-index: 100;
-		left:0;
-		top: 0px;
-		height: 60px;
-		width: 100%;
-		position: fixed;
-		
-	 	nav {
-			// Override default
-			display: inline;
-			text-align: center;
 
+		
+	 	nav { // Override déjà fait
 			li.fork {
 				// Override default
-				display:inline;
-				margin-top:13px;
+				margin-top:0px;
 
 				a{
-					// Override default
-					display:inline;
-					// Modification
-					.menukey{display:none}
+					span.menukey{display:none}
 					width:20px;
 					height:20px;
 				}
 			}
 		}
-	}
+	}*/
 	
 	// Title box override
+	/*
 	section {
 		max-width:650px;
 		padding: 30px 0px 50px 0px;
 		margin: 20px 0;
 		margin-top: 70px;
-	}
+	}*/
 }
