@@ -5,7 +5,7 @@
 
 // ----------------------------------------------------------------------------------- //
 // Debug
-body {color:black;}
+//body {color:black;}
 // ----------------------------------------------------------------------------------- //
 
 // PC mode header modifications
@@ -15,6 +15,7 @@ body {color:black;}
 		
 		div#menu {
 			display:inline-block; // Centering the menu
+			background:none;
 			
 			li.fork {
 				margin-left: 1px; // Adding gaps between buttons
