@@ -5,30 +5,26 @@
 
 // ----------------------------------------------------------------------------------- //
 // Debug
-#mobile{display:none}
-//body {color:black;}
+body {color:black;}
 // ----------------------------------------------------------------------------------- //
 
 // PC mode header modifications
 #header {
 	nav {
-		text-align:center;
-		div#menu {
+		text-align:center; // Centering the menu
+		
+		div#menu-wrapper {
+			display:inline-block; // Centering the menu
 			
-			display:inline-block;
-		li.fork {
-			margin-left: 1px;
-		}
+			li.fork {
+				margin-left: 1px; // Adding gaps between buttons
+			}
 		}
 	}
 }
 
 // Mobile mode
 @media print, screen and (max-width: 480px) {
-	// Debug instructions to see current mode
-	#mobile{display:inline}
-	#pc{display:none}
-	
 	#header {
 		// Default css instructions to override its specific "phone mode" instructions
 		z-index: 100;
@@ -38,22 +34,17 @@
 		width: 100%;
 		position: fixed;
 		
-		// Modifications
-		text-align:center;
-		
 	 	nav {
-			// Default override
+			// Override default
 			display: inline;
-			// Modifications
-			text-align:center;
 
 			li.fork {
-				// Default override
+				// Override default
 				display:inline;
 				margin-top:13px;
 				
 				a{
-					// Default override
+					// Override default
 					 display:inline;
 					// Modification
 					 .menukey{display:none}
