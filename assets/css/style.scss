@@ -6,7 +6,7 @@
 #mobile{display:none}
 
 body {
-	color:black;
+	//color:black;
 }
 
 // Mobile mode
@@ -28,26 +28,30 @@ body {
 		text-align:center;
 
 	 	nav {
+			// Default override
 			display: inline;
+			// Modifications
 			text-align:center;
 			
 			li.fork {
+				// Default override
 				display:inline;
 				margin-top:10px;
-				height:50px;
-				width:50px;
+				// Modifications
+				//height:50px;
+				//width:50px;
 				
 	  			a{
+					// Default override
 					 display:inline-block;
-					 .menukey {display:none}
+					// Modification
+					 .menukey{display:none}
 					 width:20px;
 					 height:20px;
 				}
 			}
 		}
 	}
-	
-
 	
 	// Title box override
 	section {
