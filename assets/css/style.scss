@@ -12,8 +12,12 @@ body {color:white;}
 // PC mode header modifications
 #header {
 	nav {
+		span#menu {
+			text-align:center;
+			color:red;
 		li.fork {
 			margin-left: 1px;
+		}
 		}
 	}
 }
@@ -41,9 +45,7 @@ body {color:white;}
 			display: inline;
 			// Modifications
 			text-align:center;
-			span#menu {
-				text-align:center;
-								
+
 			li.fork {
 				// Default override
 				display:inline;
@@ -57,7 +59,6 @@ body {color:white;}
 					 width:20px;
 					 height:20px;
 				}
-			}				
 			}
 		}
 	}
