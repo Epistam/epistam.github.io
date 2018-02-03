@@ -3,15 +3,13 @@
 
 @import "{{ site.theme }}";
 
-.fork{
-	margin-left:1px;	
-}
+// Margin left needed todo
 
 body{
   color:orange;
 }
 #mobile{display:none}
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 400px) {
 	#mobile{display:inline}
 	#pc{display:none}
 	.header {
