@@ -7,6 +7,10 @@
 
 #mobile{display:none}
 
+body {
+	color:blue;
+}
+
 @media print, screen and (max-width: 480px) {
 	#mobile{display:inline}
 	#pc{display:none}
@@ -17,9 +21,14 @@
 	height: 60px;
 	width: 100%;
 	position: fixed;
-	  a {
-		  display:none;
+	  nav {
+		  li {
+			 a{
+				 .menukey {display:none}
+			  }
+		  }
 	  }
+
   }
   .fork {
 	  margin-top:10px;
