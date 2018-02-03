@@ -10,21 +10,23 @@ body {color:black;}
 
 // PC mode header modifications
 #header {
+	text-align:center;
 	nav {
-		text-align:center; // Centering the menu
-		background:none;
+		display: inline-block;
+		//text-align:center; // Centering the menu
+		//background:none;
 		
-		div#menu {
+		/*div#menu {
 			display:inline-block; // Centering the menu
 			background:none;
 			
 			li.fork {
 				margin-left: 1px; // Adding gaps between buttons
 			}
-		}
+		}*/
 	}
 }
-
+/*
 // Mobile mode
 @media print, screen and (max-width: 480px) {
 	#header {
@@ -67,4 +69,4 @@ body {color:black;}
 		margin: 20px 0;
 		margin-top: 70px;
 	}
-}
+}*/
