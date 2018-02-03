@@ -4,13 +4,13 @@
 @import "{{ site.theme }}";
 
 body{
-  color:white;
+  color:green;
 }
 #mobile{display:none}
 @media print, screen and (max-width: 720px) {
 	#mobile{display:inline}
 	#pc{display:none}
 	.header {
-		max-width:300px;		
+		max-width:100px;		
 	}
 }
