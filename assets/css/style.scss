@@ -6,16 +6,22 @@
 // Margin left needed todo
 
 body{
-  color:orange;
+  color:white;
 }
 #mobile{display:none}
-@media print, screen and (max-width: 400px) {
+
+
+@media print, screen and (max-width: 480px) {
 	#mobile{display:inline}
 	#pc{display:none}
-	.header {
-		width:100px;		
-	}
-	.fork{
-		width:20px;
-	}
+/*  #header {
+    margin-top: -20px;
+  }
+
+  section {
+    margin-top: 40px;
+  }
+  nav {
+    display: none;
+  }*/
 }
