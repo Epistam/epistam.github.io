@@ -5,7 +5,7 @@
 
 // ----------------------------------------------------------------------------------- //
 // Debug
-//body {color:black;}
+body {color:black;}
 // ----------------------------------------------------------------------------------- //
 
 // PC mode header modifications
@@ -40,18 +40,20 @@
 			// Override default
 			display: inline;
 
-			li.fork {
-				// Override default
-				display:inline;
-				margin-top:13px;
-				
-				a{
+			div#menu {
+				li.fork {
 					// Override default
-					 display:inline;
-					// Modification
-					 .menukey{display:none}
-					 width:20px;
-					 height:20px;
+					display:inline;
+					margin-top:13px;
+
+					a{
+						// Override default
+						 display:inline;
+						// Modification
+						 .menukey{display:none}
+						 width:20px;
+						 height:20px;
+					}
 				}
 			}
 		}
