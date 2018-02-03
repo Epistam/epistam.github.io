@@ -37,20 +37,18 @@ body {color:black;}
 			display: inline;
 			text-align: center;
 
-			div#menu {
-				li.fork {
+			li.fork {
+				// Override default
+				display:inline;
+				margin-top:13px;
+
+				a{
 					// Override default
 					display:inline;
-					margin-top:13px;
-
-					a{
-						// Override default
-						 display:inline;
-						// Modification
-						 .menukey{display:none}
-						 width:20px;
-						 height:20px;
-					}
+					// Modification
+					.menukey{display:none}
+					width:20px;
+					height:20px;
 				}
 			}
 		}
