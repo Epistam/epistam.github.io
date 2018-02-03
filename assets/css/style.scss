@@ -8,14 +8,14 @@ li.fork{
 }
 
 body{
-  color:pink;
+  color:orange;
 }
 #mobile{display:none}
 @media print, screen and (max-width: 720px) {
 	#mobile{display:inline}
 	#pc{display:none}
 	.header {
-		max-width:100px;		
+		width:100px;		
 	}
 	.fork{
 		width:20px;
