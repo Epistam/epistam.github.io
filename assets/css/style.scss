@@ -9,6 +9,7 @@ body {color:black;}
 // ----------------------------------------------------------------------------------- //
 
 // PC mode header modifications
+/*
 #header {
 	text-align:center;
 	nav {
@@ -16,16 +17,11 @@ body {color:black;}
 		//text-align:center; // Centering the menu
 		//background:none;
 		
-		/*div#menu {
-			display:inline-block; // Centering the menu
-			background:none;
-			
-			li.fork {
-				margin-left: 1px; // Adding gaps between buttons
-			}
-		}*/
+		li.fork {
+			margin-left: 1px; // Adding gaps between buttons
+		}
 	}
-}
+}*/
 /*
 // Mobile mode
 @media print, screen and (max-width: 480px) {
