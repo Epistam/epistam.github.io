@@ -28,12 +28,11 @@ body {color:red;}
 	 	nav { // Override déjà fait
 			margin-top: 13px;
 			li.fork {
-				//margin: 0 0 0 0;
 				a{
-					span.menukey{display:none}
-					padding: 0 0 0 0;
-					width:20px;
-					height:20px;
+					span.menukey{display:none} // Remove center text
+					padding: 0 0 0 0; // Cancel all heading
+					width:50px;
+					height:50px;
 				}
 			}
 		}
