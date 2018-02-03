@@ -17,12 +17,11 @@
 		background: none;
 		
 		li.fork {
-			display:inline; // Override
 			margin-left: 1px; // Adding gaps between buttons
 		}
 	}
 }
-/*
+
 // Mobile mode conditionnal instructions
 @media print, screen and (max-width: 480px) {
 	#header {
@@ -51,4 +50,4 @@
 		margin: 20px 0;
 		margin-top: 70px;
 	}
-}*/
+}
