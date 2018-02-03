@@ -6,16 +6,16 @@
 // ----------------------------------------------------------------------------------- //
 // Debug
 #mobile{display:none}
-body {color:black;}
+//body {color:black;}
 // ----------------------------------------------------------------------------------- //
 
 // PC mode header modifications
 #header {
 	nav {
+		text-align:center;
 		div#menu {
-			text-align:center;
-			color:red;
-			margin-left:10%;
+			
+			display:inline-block;
 		li.fork {
 			margin-left: 1px;
 		}
