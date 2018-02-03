@@ -3,10 +3,12 @@
 
 @import "{{ site.theme }}";
 
-nav {
- max-width:300px;
+body{
+  color:blue;
 }
 
-body{
-  color:yellow;
+@media print, screen and (max-width: 700px) {
+	.header {
+		max-width:300px;		
+	}
 }
