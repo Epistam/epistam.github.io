@@ -21,12 +21,11 @@ body {
 	height: 60px;
 	width: 100%;
 	position: fixed;
-	  #menubar {
-		  position:inline-block;
-		 
+	text-align:center;
+
 	 	 nav {
-			 width:100%;
-			  text-align:center;
+			width:100%;
+			text-align:center;
 			  li {
 				  display:inline;
 				 a{
@@ -37,7 +36,6 @@ body {
 				  }
 			  }
 		  }
-	  }
 
   }
   .fork {
