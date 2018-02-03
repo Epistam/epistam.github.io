@@ -9,6 +9,3 @@ Well, allowing me to write down my thoughts in an intelligible way -for once- is
 
 I shall then wish you a pleasant and enjoyable stay, all the while feeling free to contact me or take a peek at the About Me page.
 Have a nice day !
-
-
-TODO : update tab title
