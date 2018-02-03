@@ -1,6 +1,7 @@
 # Responsive design on Github Pages
+###### 03/02/2018
 
-# A neccessary doctrine
+## A neccessary doctrine
 As my non-existent viewer base has probably noticed, this blog and all its pages are now accessible on mobile with a nice new shiny menu.
 But all of this is the result of a few hours of article reading and CSS tinkering. 
 
@@ -8,7 +9,7 @@ During my few years out of the IT world, I missed a fundamental paradigm change 
 The massive invasion of the mobile platform, has changed it all. HTML5 is now a pillar of Webdev as what seemed new and unreliable before is nothing compared to the ever-changing ecosystem of mobile browsers and standards. 
 One simply cannot, being either a huge company or a small casual developper, the mobile audience. 
 
-# GP Themes
+## GP Themes
 Fortunately, Github Pages theme developpers are most of the time professionnal developpers who are not as ignorant as I am on the topic, and thus make quality content.
 The theme I'm using, Midnight, was already responsive... mostly working as I intended it to. 
 This theme features a header which, on the example configurations is used to link a Github pages. I figured I'd use it as a menu, but the developper apparently didn't consider this possibility. 
@@ -16,7 +17,7 @@ I can't really blame him, though, as I don't even know if it is intended or not 
 But the fact of the matter is, the header simply vanished once the window was less than 480 pixels wide. 
 If this header is going to be a menu, I'd rather have it displayed on every window size. 
 
-# Overriding (once again) the theme
+## Overriding (once again) the theme
 Obviously, the only solution was to indeed override the existing theme (in this case the CSS). 
 The procedure is mentionned in the page I linked in my first article on Github Pages. 
 
