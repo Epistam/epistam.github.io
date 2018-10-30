@@ -1,4 +1,4 @@
-# Challenges - DTRE Challenge Week 44 (Part 1)
+# DTRE Challenge - Week 44 Prime Number Generator (Part 1)
 ###### 2018 - Week 44
 
 In these new series, I will detail my reflexion on whichever new challenges from ESIEA's Robotics Association I find interesting and worth expanding on. 
