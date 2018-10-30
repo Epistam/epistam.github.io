@@ -55,7 +55,7 @@ int main(void) {
 	return EXIT_SUCCESS;
 }
 ```
-The code is pretty self explanatory. One thing one needs to be careful about though, is how to handle the loop in isPrime(). floor() and sqrt() are both functions from the math.h library, and both take double arguments, and return double, so casting is necessary. 
+The code is pretty self explanatory. One thing one needs to be careful about though, is how to handle the loop in `isPrime()`. `floor()` and `sqrt()` are both functions from the `math.h` library, and both take double arguments, and return double, so casting is necessary. 
 
 Given the definition of prime numbers, I prefer to start primality checks at 2, since it's by convention the first prime number. We are thus spared additional conditions to ignore i's divisibility by 1 or itself. 
 

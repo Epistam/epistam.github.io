@@ -25,10 +25,10 @@ In the former case, we can run extensive checks without a negative impact on fin
 
 ## Random thoughts
 
-Starting with the useless part, I first thought about going full O(1) and writing something like this : 
-'''
+Starting with the useless part, I first thought about going full `O(1)` and writing something like this : 
+```c
 puts("21125729");
-'''
+```
 Not exactly a productive thought. 
 
 In a less-use-less manner, I also thought about multithreading : most CPUs today have at least 2 logical cores, and it would be a shame not to make use of this additional ressource, especially in a power-hungry task. 
@@ -36,11 +36,9 @@ In a less-use-less manner, I also thought about multithreading : most CPUs today
 To try and mitigate one of the flaws mentionned earlier, it is also necessary to limit memory use to its minimum. Fortunately, [Internet](https://primes.utm.edu/nthprime/index.php) is a good friend, and I didn't totally make up the number I mentionned earlier. All of this concurs to one thing : the biggest number we're ever going to see on that sieve (if we use one) holds on 25 bits. That may be a way to decrease memory usage. 
 
 And finally, in terms of the structure itself, the fact we need an ordinal number forces us to compute virtually every prime number before the target one. 
-... Or does it ? It has been established that a rough average approximation for the n-th prime number is 
-	n ln(n)
-which maybe we could sieve around to find the closest prime to this number ? The one thing we need to be sure about though, is that the closest number is indeed the n-th prime.
+... Or does it ? It has been established that a rough average approximation for the n-th prime number is `n ln(n)` which maybe we could sieve around to find the closest prime to this number ? The one thing we need to be sure about though, is that the closest number is indeed the `n`-th prime.
 
-Which brings us to one more dubiousness in this challenge : where do you draw the line between empiric conclusions which you don't have the right to use and proven statements ? What if the property shown above has been shown true by empirical evidence until a few thousand numbers above the one we're searching for ? The result might change if you change the number searched for, yet it gives the correct result in this set of particular circumstances. Just like my "O(1) method" does. It's a bit of a slippery slope isn't it ? 
+Which brings us to one more dubiousness in this challenge : where do you draw the line between empiric conclusions which you don't have the right to use and proven statements ? What if the property shown above has been shown true by empirical evidence until a few thousand numbers above the one we're searching for ? The result might change if you change the number searched for, yet it gives the correct result in this set of particular circumstances. Just like my "`O(1)` method" does. It's a bit of a slippery slope isn't it ? 
 
 ## Conclusion
 
@@ -52,6 +50,6 @@ Possibilities are endless in that regard.
 * Check system bottlenecks to optimize generation
 * Heavy use of multithreading
 * Optimize use of memory
-* Maybe use n ln(n) approximation ?
+* Maybe use `n ln(n)` approximation ?
 * Maybe use sieves ? 
 * ...
