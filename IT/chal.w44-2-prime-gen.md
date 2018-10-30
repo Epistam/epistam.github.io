@@ -25,36 +25,36 @@ Which should help decrease the complexity significantly and make it a somewhat d
 Let's see how it performs !
 
 ### The Code
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-	#include <stdio.h>
-	#include <stdlib.h>
-	#include <math.h>
+int isPrime(int n) {
+	int i;
 
-	int isPrime(int n) {
-		int i;
+	for(i = 2 ; (double)i <= floor(sqrt((double)n)) ; i++) if(n%i == 0) return 0;
+	return 1;
+}
 
-		for(i = 2 ; (double)i <= floor(sqrt((double)n)) ; i++) if(n%i == 0) return 0;
-		return 1;
-	}
+int main(void) {
 
-	int main(void) {
+	int i=2,n=0, p=0; // Starting at 1st prime
 
-		int i=2,n=0, p=0; // Starting at 1st prime
-
-		while(n < 1337420) {
-			if(isPrime(i)) {
-				p = i;
-				n++;
-				// printf("%d : %d\n", n, p);
-			}
-			i++;
+	while(n < 1337420) {
+		if(isPrime(i)) {
+			p = i;
+			n++;
+			// printf("%d : %d\n", n, p);
 		}
-
-		printf("The 1.337.420th prime number is %d \n", p);
-
-		return EXIT_SUCCESS;
+		i++;
 	}
 
+	printf("The 1.337.420th prime number is %d \n", p);
+
+	return EXIT_SUCCESS;
+}
+```
 The code is pretty self explanatory. One thing one needs to be careful about though, is how to handle the loop in isPrime(). floor() and sqrt() are both functions from the math.h library, and both take double arguments, and return double, so casting is necessary. 
 
 Given the definition of prime numbers, I prefer to start primality checks at 2, since it's by convention the first prime number. We are thus spared additional conditions to ignore i's divisibility by 1 or itself. 
