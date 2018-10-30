@@ -26,37 +26,34 @@ Let's see how it performs !
 
 ### The Code
 
-'''
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <math.h>
 
-int isPrime(int n) {
-	int i;
+	int isPrime(int n) {
+		int i;
 
-	for(i = 2 ; (double)i <= floor(sqrt((double)n)) ; i++) if(n%i == 0) return 0;
-	return 1;
-}
-
-int main(void) {
-
-	int i=2,n=0, p=0; // Starting at 1st prime
-
-	while(n < 1337420) {
-		if(isPrime(i)) {
-			p = i;
-			n++;
-			// printf("%d : %d\n", n, p);
-		}
-		i++;
+		for(i = 2 ; (double)i <= floor(sqrt((double)n)) ; i++) if(n%i == 0) return 0;
+		return 1;
 	}
 
-	printf("The 1.337.420th prime number is %d \n", p);
+	int main(void) {
 
-	return EXIT_SUCCESS;
-}
+		int i=2,n=0, p=0; // Starting at 1st prime
 
-'''
+		while(n < 1337420) {
+			if(isPrime(i)) {
+				p = i;
+				n++;
+				// printf("%d : %d\n", n, p);
+			}
+			i++;
+		}
+
+		printf("The 1.337.420th prime number is %d \n", p);
+
+		return EXIT_SUCCESS;
+	}
 
 The code is pretty self explanatory. One thing one needs to be careful about though, is how to handle the loop in isPrime(). floor() and sqrt() are both functions from the math.h library, and both take double arguments, and return double, so casting is necessary. 
 
