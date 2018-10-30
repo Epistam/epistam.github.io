@@ -47,9 +47,9 @@ Possibilities are endless in that regard.
 
 ## TL;DR
 
-- Check system bottlenecks to optimize generation
-- Heavy use of multithreading
-- Optimize use of memory
-- Maybe use n ln(n) approximation ?
-- Maybe use sieves ? 
-- ...
+* Check system bottlenecks to optimize generation
+* Heavy use of multithreading
+* Optimize use of memory
+* Maybe use n ln(n) approximation ?
+* Maybe use sieves ? 
+* ...
