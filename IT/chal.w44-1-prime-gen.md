@@ -1,4 +1,4 @@
-# DTRE Challenge - Week 44 Prime Number Generator (Part 1)
+# DTRE Challenge - Week 44 - Prime Number Generator (Part 1)
 ###### 2018 - Week 44
 
 In these new series, I will detail my reflexion on whichever new challenges from ESIEA's Robotics Association I find interesting and worth expanding on. 
@@ -26,7 +26,9 @@ In the former case, we can run extensive checks without a negative impact on fin
 ## Random thoughts
 
 Starting with the useless part, I first thought about going full O(1) and writing something like this : 
-	puts("21125729");
+'''
+puts("21125729");
+'''
 Not exactly a productive thought. 
 
 In a less-use-less manner, I also thought about multithreading : most CPUs today have at least 2 logical cores, and it would be a shame not to make use of this additional ressource, especially in a power-hungry task. 
