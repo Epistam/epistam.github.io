@@ -13,8 +13,8 @@ offer significantly superior performances (at least on my system).
 Among which : 
 * The simple "division check" approach, as a bit of a control experiment
 * The multithreaded version of the aforementionned approach
-* The non-optimized Eratosthene sieves
-* The Atkin sieve
+* The non-optimized Eratosthene's sieve
+* The Atkin's sieve
 
 ## Division check
 
@@ -68,13 +68,13 @@ For this piece of code, I ran 3 different tests :
 
 ## Erathostene's sieve
 
-This method is probably the first one you are taught when talking about prime numbers in secondary school. The idea is to go through a table of all integers, and simply cross out every integer that's a multiple from numbers before it. 
+This method is probably the first one you are taught when covering about prime numbers in secondary school. The idea is to go through a table of all integers, and simply strike out every integer that's a multiple from numbers before it. 
 
-The main problem with this method is RAM. We are indeed allocating a huge array of integers. However in this case, if we are using classic unsigned 32 bits integers and a maximum array size of 30000000, we end up with a very reasonnable 115MB RAM usage. Of course, this depends largely on the target prime number. Fortunately, used size seems to increase sub-linearly, since for every bit added to describe a number, the amount of possible numbers doubles. 
+The main problem with this method is RAM. We are indeed allocating a huge array of integers. However in this case, if we are using classic unsigned 32 bits integers and a maximum array size of 30,000,000, we end up with a very reasonnable 115MB RAM usage. Of course, this largely depends on the target prime number. Fortunately, used size seems to increase sub-linearly, since for every bit added to describe a number, the amount of possible numbers doubles. 
 
 ### The Code
 
-I have written two "interpretations" of this method, the first one of which sticks way closer to the original one, and goes as follows : 
+I have written two "interpretations" of this method, the first one of which sticks way closer to the original, and goes as follows : 
 
 ```c
 #include <stdlib.h>
@@ -118,7 +118,7 @@ int main(void) {
 }
 ```
 
-Strangely enough, I had trouble declaring such a large array statically, i.e. like `sieve[SIEVE_MAX_BOUND]` : it just wouldn't complete and would throw a segmentation fault at my face because of subsequent operations running into unallocated memory.
+Strangely enough, I had trouble declaring such a large array statically, i.e. like `sieve[SIEVE_MAX_BOUND]` : it just wouldn't do it and would throw a segmentation fault at my face because of subsequent operations running into unallocated memory.
 
 My second, heavily modified implementation goes like this : 
 ```c
@@ -159,16 +159,16 @@ int main(void) {
 ```
 
 The code looks way more compact, and I think it is actually closer to the very first "divisibility check" version than to Eratosthene's Sieve. 
-Here, we use a "reverse sieve", where we will but all the prime numbers we find on the way. To check whether a number is prime or not, we will check its divisibility by each member of this list of prime numbers. It should theoritically be more efficient than the original algorithm, since not only do we limit our checks to a range between 2 and the square root of n, but we don't check for all numbers in that interval. 
+Here, we use a "reverse sieve", where we will store all the prime numbers we find on the way. To check whether a number is prime or not, we will check its divisibility by each member of this list of prime numbers. It should theoritically be more efficient than the original algorithm, since not only do we limit our checks to a range between 2 and the square root of n, but we don't check for all numbers in that interval. 
 
 ### Results
 Let's prepare the drum rolls... and let's start with the second implementation.
 
-* The second implementation reaches its result in... 9.9s ! That's a significant decrease from what we've seen earlier, and our record for now. No surprise here : complexity is decreased (although because of the unknown on the repartition of prime numbers, I think (but might be wrong) we even cannot evaluate complexity on this one).
+* The second implementation reaches its result in... 9.9s ! That's a significant decrease from what we've seen earlier, and our best score for now. No surprise here : complexity is decreased (although because of the unknown on the repartition of prime numbers, I think (but might be wrong) we even cannot evaluate complexity on this one).
 * The first implementation executes in a whopping... 1.09s ! Okay, I have to say, this one, I was slightly surprised with. 
 
 I actually ran it first, and the 30x decrease in execution time baffled me quite a bit. Then, I took a look at the program itself... And found out a few reasons why this difference is so visible. 
-Indeed, this program doesn't use the mod (%) operator, which is an expensive operator in terms of CPU time. This is, I think, the main reason that makes the first implementation so superior : it relies solely on simple operations such as multiplication, and memory assignation. It is also a good example of what I mentionned in part 1 about memory-heavy programs. This one uses both a lot of RAM, and generates a lot of access to it, and will thus be more heavily impacted by poor RAM quality and / or speed. 
+Indeed, this program doesn't use the mod (%) operator, which is an expensive operator in terms of CPU time. This is, I think, the main reason that makes the first implementation so superior : it relies solely on simple operations such as multiplication, and memory assignation. It is also a good example of what I mentionned in part 1 about memory-heavy programs. This one uses both a lot of RAM, and generates a lot of trafic towards it, and will thus be more heavily impacted by poor RAM quality and / or speed. 
 
 One good way to improve the second implementation's performance would be using custom integer types, to fit closer to the 25 bits we said we needed earlier. The binary division would then take around 25% less time to give results, and so would the rest of the program. I might try that tomorrow. 
 
