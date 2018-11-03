@@ -1,5 +1,7 @@
 # All IT-related articles (sorted by date) :
 
+* [(04/11/2018) DTRE Challenge - Week 44 - Prime Number Generator (Part 4)](chal.w44-4-prime-gen.md)
+* [(02/11/2018) DTRE Challenge - Week 44 - Prime Number Generator (Part 3)](chal.w44-3-prime-gen.md)
 * [(31/10/2018) DTRE Challenge - Week 44 - Prime Number Generator (Part 2)](chal.w44-2-prime-gen.md)
 * [(30/10/2018) DTRE Challenge - Week 44 - Prime Number Generator (Part 1)](chal.w44-1-prime-gen.md)
 * [(03/02/2018) Blog - Responsive design on Github Pages](blog.responsive_design_on_github_pages.md)
