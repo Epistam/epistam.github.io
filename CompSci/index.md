@@ -1,5 +1,6 @@
-# All IT-related articles (sorted by date) :
+# All CS-related articles (sorted by date) :
 
+* [(24/02/2019) DTRE Challenge - The Last One (tm) - Terminal 3D Renderer](chal.last-3drenderer.md)
 * [(04/11/2018) DTRE Challenge - Week 44 - Prime Number Generator (Part 4)](chal.w44-4-prime-gen.md)
 * [(02/11/2018) DTRE Challenge - Week 44 - Prime Number Generator (Part 3)](chal.w44-3-prime-gen.md)
 * [(31/10/2018) DTRE Challenge - Week 44 - Prime Number Generator (Part 2)](chal.w44-2-prime-gen.md)
