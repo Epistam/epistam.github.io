@@ -95,7 +95,6 @@ function fillGrid2D($points3D, $alpha, $beta) {
 	for($i = 0 ; $i < 36 ; $i++) $grid[] = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); // DISGUSTANG
 	
 	foreach($points3D as $point) {
-		//$grid[(int)(euclidNorm($point)*cos($alpha))+10][(int)(euclidNorm($point)*cos($beta))+10] = 1;
 		$x = $point[0]*cos($beta)*cos($alpha) - $point[1]*sin($alpha) + $point[2]*sin($beta)*cos($alpha);
 		$z = -$point[0]*sin($beta) + $point[2]*cos($beta);
 		$grid[(int)$x+18][(int)$z+18] = $point[3];
@@ -142,7 +141,6 @@ So, really, it's down to a single line of code :
 
 ```bash
 system("stty -icanon");
-
 ```
 
 Once this "contingency" is taken care of, we can move on to the event loop and the actual core of the program :
