@@ -1,4 +1,4 @@
-# Homemade NAS series : the beginning
+# Homemade NAS series : the beginning (WiP)
 ###### 07/09/2019
 
 ## Context 
@@ -150,12 +150,50 @@ separate hearders
 ## Room for expansion
 I also mentionned upgrades : to me, there are two ways to proceed.
 
-The first one is somewhat sequential and probably takes a bit of time : replace a 1TB disk by a 2TB one, rebuild the volume on the new disk. Do this for every disk and then simply expand the RAID array and then the sparse file. 
+The first one is somewhat sequential and probably takes a bit of time : replace
+a 1TB disk by a 2TB one, rebuild the volume on the new disk. Do this for every
+disk and then simply expand the RAID array and then the sparse file. 
 
-The second one would probably be faster, since it doesn't imply calculations for every last bit of data available. It would, however, require the use of another computer with at least 6 SATA ports. The idea is to move the 1TB disks into the "auxiliary" machine, mount the RAID volume there (software RAID makes things considerably easier here), then put the new disks into the NAS, build a new array and simply copy the sparse file from one machine to the other. 
+The second one would probably be faster, since it doesn't imply calculations for
+every last bit of data available. It would, however, require the use of another
+computer with at least 6 SATA ports. The idea is to move the 1TB disks into the
+"auxiliary" machine, mount the RAID volume there (software RAID makes things
+considerably easier here), then put the new disks into the NAS, build a new
+array and simply copy the sparse file from one machine to the other. 
 
-Now, I couldn't fail to mention the one drawback of this method : it leaves you with 6 used 1TB disks. Now, it all depends if you need this room or not. These could probably be recycled inside various machines, family, or even put into a new, smaller NAS, with or without RAID. 
+Now, I couldn't fail to mention the one drawback of this method : it leaves you
+with 6 used 1TB disks. Now, it all depends if you need this room or not. These
+could probably be recycled inside various machines, family, or even put into a
+new, smaller NAS, with or without RAID. 
 
 ## Moar redundancy 
+If you have worked with backups at some point, chances are you have heard about
+the 3-2-1 rule. The gist of the idea is as follows ; 
+- your data is supposed to be stored 3 in copies ;
+- one being in production, and 2 others as backup ;
+- and among these backups, have one of them stored offsite in case of disaster
+  (say, your building getting leveled in a fire, for example).
 
+Attentive readers will notice this rule is not quite respected : the failure
+tolerance allowed by RAID acts as some kind of first backup, but there is no
+offsite copy. Yet.
+
+What I intend to do in the long term is to setup an archiving server, hosted by
+a well known provider in a datacenter. 
+
+Now there are two ways to proceed : the "trivial" one would consist in sending
+the whole LUKS file at every backup. This would be inefficient, and would
+totally disregard the existence of incremental backups. However, it would have
+the upside of being secure from the beginning to the end.
+
+The other plan is to use another LUKS volume on the server, and mount both the
+production and the distant volume, and make an incremental backup from one to
+the other. The problem here being that, since we intended not to decrypt the
+data directly on the NAS, we need a client machine, possibly the one the user
+usually uses (sic), to mount both volumes and make the incremental transfer.
+Depending on the previous changes and bandwidth available, this operation could
+potentially take time and be a bit of a hassle to the end user. Then again, no
+choice made yet.
+
+The option I plan to use is to use another LUKS file on the server, and 
 offsite backups
