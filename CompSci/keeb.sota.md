@@ -3,9 +3,9 @@
 
 ## Context and needs 
 And one new project piling up on the list ! It stems from a fairly simple problem : I've grown quite used to my laptop keyboard, however I do have a
-full-size computer too. My desk is not the largest nor the widest, and I'd like to have some wiggle room, plus I've noticed virtually a third of my
-full size keyboard (which I'm using for my computer) isn't used much if at all. The said fullsize keyboard was also bought years ago, and didn't have
-any specific attention to the quality of the typing experience. I figured maybe it was time for a bit of a change. 
+full-size computer too, and the keyboard that goes along with it. My desk is not the largest nor the widest, and I'd like to have some wiggle room,
+plus I've noticed virtually a third of my full size keyboard isn't used much if at all. The said fullsize keyboard was also bought years ago, and
+I didn't put any specific attention to the quality of the typing experience into it. I figured maybe it was time for a bit of a change. 
 
 The gist of what I just wrote is that I'm looking for a keyboard : 
 - with a small form factor that doesn't take up half my desk
@@ -94,3 +94,11 @@ The alternative option, if you can afford it / have access to it, is using a wat
 ## The keys material
 
 
+
+
+
+wood case
+capot qui double comme palmrest
+wireless / arduino ? 
+slightly tilted to the back
+résistance dans palmrest
