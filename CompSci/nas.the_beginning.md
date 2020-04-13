@@ -71,7 +71,7 @@ Now, that last one is a bit of a problem, since most SoC chips usually provide a
 maximum of 4 SATA ports, and that also excluses the usual suspects when talking
 about DIY embedded projects : the Banana Pi, the Orange Pi, and the Raspberry Pi
 (although...  some madmen tried and actually succeeded in salvaging a PCIe 2.0
-interface, but I think I not nearly proficient enough to achieve 
+interface, but I don't think I am nearly proficient enough to achieve 
 [this](http://archive.is/OODbO) level of hacking).
 
 I have identified two SoCs which I think might fit these requirements : 
@@ -79,17 +79,17 @@ I have identified two SoCs which I think might fit these requirements :
 - the infamous Odroid H2 (datasheet [here](https://wiki.odroid.com/odroid-h2/start#odroid-h2_schematic_and_full_intel_j4105_datasheets))
 
 In all honesty, this choice is not done yet. I see two major upsides to the
-first option : 
+second option : 
 - It features a x86 CPU ;
-- Is probably easier to acquire since Marvell sellers usually sell their
+- It probably is easier to acquire since Marvell sellers usually sell their
   products to NAS manufacturers rather than to students wanting to make a NAS on
   their own.
 
-But the main factor is the presence of (vanilla) PCIe 2.0 x4 ports, which allows
-the addition of a SATA extension card, this fitting my first requirements (most
-embedded SoCs don't feature more than 4 SATA ports). 
+But the main factor is the presence of (vanilla) PCIe 2.0 x4 ports, which
+allows the addition of a SATA extension card, thus fitting my "min. 6 disks"
+requirements (most embedded SoCs don't feature more than 4 SATA ports). 
 
-One factor that plays in favor of the Marvell chip, though, is one of power
+One factor that plays in favor of the Marvell chip, though, is power
 consumption. 
 
 ram ? 
@@ -197,3 +197,8 @@ choice made yet.
 
 The option I plan to use is to use another LUKS file on the server, and 
 offsite backups
+
+
+
+$ NAS : should be cheap af to replace easily in case of breakdwon
+
