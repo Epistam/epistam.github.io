@@ -114,17 +114,20 @@ However, I've found recently LUKS provides another feature in the form of
 sparse files. The idea is to contain a whole volume into a regular file, which
 can then be accessed locally or via Samba, NFS, or SSHFS. 
 
-Then again, my choice isn't quite done right now, and the matter is especially one
-of encryption. SSHFS provides encryption on top of the LUKS volume, but makes
-use of FUSE, which causes significant latency in the handling of the file
-system. 
+Then again, my choice isn't quite done right now, and the matter is especially
+one of encryption. SSHFS provides encryption on top of the LUKS volume, but
+makes use of FUSE, which causes significant latency and bottlenecking in the
+handling of the file system (not to mention the encryption computational
+overhead).
+
+(https://www.usenix.org/system/files/conference/fast17/fast17-vangoor.pdf)
 
 ## Protecting oneself against electrical UPSies 
 Of course, if we're talking about sensitive data, I think anybody even remotely
 sane would care about the way the infrastructure is actually powered. In terms
 of short term damage control, the main requirement is over-voltage and
 over-current control, since both of those would, given enough power, cause
-durable damage. 
+durable damage to the hardware, even potentially including the disks.
 
 But there are also multiple other features I would like the UPS to possess : 
 - A small form factor (yet again, refer to the Design part for the numbers) ;
