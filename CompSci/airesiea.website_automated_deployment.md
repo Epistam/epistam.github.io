@@ -9,6 +9,7 @@ website asso, deploy modifications to the website without logging in through ssh
   gives Ruby / Sinatra as an example, I just used Flask cause why the F not)
 - a Flask REST API on the server, built in two parts : 
 	- a Python / Flask service : 
+
 ```python
 	import os
 	import time as t
@@ -82,7 +83,9 @@ website asso, deploy modifications to the website without logging in through ssh
 
 	app.run(host="[DOMAIN]", port=[PORT])
 ```
+
 	- a Bash script :
+
 ```bash
 	#!/bin/bash
 
@@ -133,6 +136,7 @@ website asso, deploy modifications to the website without logging in through ssh
 		```
 	- a small Systemd unit (`/etc/systemd/system/restapi.service`) to start up the
 	  API at boot time 
+
 ```
 	[Unit]
 	Description=REST API for airesiea.org deployment
