@@ -7,8 +7,8 @@ website asso, deploy modifications to the website without logging in through ssh
 ## Setting it up
 - GitHub Webhooks querying a REST API hosted on the server (GH documentation
   gives Ruby / Sinatra as an example, I just used Flask cause why the F not)
-- a Flask REST API on the server, built in two parts : 
-	- a Python / Flask service : 
+- a Flask REST API on the server, built in two parts a Python / Flask service
+  and a Bash script :
 
 ```python
 	import os
@@ -84,8 +84,6 @@ website asso, deploy modifications to the website without logging in through ssh
 	app.run(host="[DOMAIN]", port=[PORT])
 ```
 
-	- a Bash script :
-
 ```bash
 	#!/bin/bash
 
@@ -134,8 +132,8 @@ website asso, deploy modifications to the website without logging in through ssh
 	fi
 	echo "Usage : deploy.sh [prod/test] [webserver root]"
 ```
-	- a small Systemd unit (`/etc/systemd/system/restapi.service`) to start up the
-	  API at boot time 
+- a small Systemd unit (`/etc/systemd/system/restapi.service`) to start up the
+  API at boot time 
 
 ```
 	[Unit]
