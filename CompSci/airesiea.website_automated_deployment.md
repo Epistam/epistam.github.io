@@ -133,7 +133,7 @@ website asso, deploy modifications to the website without logging in through ssh
 			exit 0
 	fi
 	echo "Usage : deploy.sh [prod/test] [webserver root]"
-		```
+```
 	- a small Systemd unit (`/etc/systemd/system/restapi.service`) to start up the
 	  API at boot time 
 
