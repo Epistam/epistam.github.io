@@ -1,5 +1,6 @@
 # All CS-related articles (sorted by date) :
 
+* [(02/02/2023) Air ESIEA - Automated Hugo deployment ft. GitHub](airesiea.website_automated_deployment.md)
 * [(28/04/2021) Misc - ffmpeg over SSH : a low-tech "distcc" for encoding](misc.ffmpeg_over_ssh.md)
 * [(26/04/2020) Air ESIEA - Building a nice, simple static website for Air ESIEA](airesiea.building_a_nice_simple_static_site.md)
 * [(24/02/2019) DTRE Challenge - The Last One (tm) - Terminal 3D Renderer](chal.last-3drenderer.md)
