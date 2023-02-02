@@ -136,15 +136,15 @@ website asso, deploy modifications to the website without logging in through ssh
   API at boot time 
 
 ```
-	[Unit]
-	Description=REST API for airesiea.org deployment
-	After=multi-user.target
-	[Service]
-	Type=simple
-	Restart=always
-	ExecStart=/usr/bin/python3 /var/www/airesiea.org/deploy.py
-	[Install]
-	WantedBy=multi-user.target
+[Unit]
+Description=REST API for airesiea.org deployment
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /var/www/airesiea.org/deploy.py
+[Install]
+WantedBy=multi-user.target
 ```
 
 ## How to use it
